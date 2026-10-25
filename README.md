@@ -15,8 +15,10 @@ Assignment-4/
 ├── alertmanager.yml
 ├── README.md
 ├── demo.mp4
-└── monitoring/
-    └── grafana-dashboard.json
+├── monitoring/
+│   └── grafana-dashboard.json
+└── plots/
+    └── five measured charts + data and plotting instructions
 ```
 
 `app.py` contains the UI, CPU model, input validation, instrumentation and local
@@ -114,6 +116,14 @@ CPU/RAM/disk and bulk correlation. Explain every query, use bounded labels,
 accessible colors, explicit units, linear axes, and 5s refresh. Include overlay
 filesystems for a container-based cloud machine while excluding pseudo filesystems.”
 Alert-expression attribution is included as comments in `alert_rules.yml`.
+
+## Plots
+
+Open [plots/](plots/README.md) for five self-contained charts covering processing
+results, latency, throughput/recovery, CPU and memory during a real single-plus-10-image
+CPU workload. Each chart includes titles, units, legends and explanatory context.
+The measured data and optional plotting script are included to reproduce the figures;
+plotting packages are not needed to run the application.
 
 ## Demonstration and validation
 
