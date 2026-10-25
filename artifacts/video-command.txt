@@ -1,1 +1,0 @@
-Recorded real live workload and saved 60-second dashboard-demo.mp4

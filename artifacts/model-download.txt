@@ -1,2 +1,0 @@
-Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:01,  3.38it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 21.82it/s]
-{"snapshot": "/workspace/Assignment-4/.cache/huggingface/hub/models--Salesforce--blip-image-captioning-base/snapshots/82a37760796d32b1411fe092ab5d4e227313294b", "sha256": "d6638651a5526cc2ede56f2b5104d6851b0755816d220e5e046870430180c767", "bytes": 989820849, "verified": true}

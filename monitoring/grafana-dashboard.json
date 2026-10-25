@@ -2,7 +2,7 @@
   "id": null,
   "uid": "caption-observatory",
   "title": "Caption Observatory \u00b7 CPU Image Captioning",
-  "description": "DA3408 \u00b7 Health \u2192 workload \u2192 latency \u2192 hardware. Real 5-second scrapes. AI-generated PromQL: attribution prompt and worked calculations are in EVALUATION.md and scripts/build_dashboard.py.\nAI prompt: Build a professional DA3408 dashboard using caption_* metrics and node_exporter; include health, mode throughput, errors, mean and histogram quantiles, bulk size, CPU/RAM/disk and bulk correlation. Explain every query, use bounded labels, accessible colors, explicit units, linear axes, and 5s refresh. Include overlay filesystems for a container-based cloud machine while excluding pseudo filesystems.",
+  "description": "DA3408 \u00b7 Health \u2192 workload \u2192 latency \u2192 hardware. Real 5-second scrapes. AI-generated PromQL: attribution prompt and worked calculations are in README.md.\nAI prompt: Build a professional DA3408 dashboard using caption_* metrics and node_exporter; include health, mode throughput, errors, mean and histogram quantiles, bulk size, CPU/RAM/disk and bulk correlation. Explain every query, use bounded labels, accessible colors, explicit units, linear axes, and 5s refresh. Include overlay filesystems for a container-based cloud machine while excluding pseudo filesystems.",
   "tags": [
     "DA3408",
     "CPU",
