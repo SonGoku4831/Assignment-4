@@ -1,0 +1,342 @@
+{
+  "snapshot": {
+    "timestamp": 1792921079.059278,
+    "metrics": {
+      "up": [
+        {
+          "metric": {
+            "__name__": "up",
+            "instance": "127.0.0.1:9100",
+            "job": "node"
+          },
+          "value": [
+            1792921079.061,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "up",
+            "instance": "127.0.0.1:9090",
+            "job": "prometheus"
+          },
+          "value": [
+            1792921079.061,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "up",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921079.061,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "up",
+            "instance": "127.0.0.1:9093",
+            "job": "alertmanager"
+          },
+          "value": [
+            1792921079.061,
+            "1"
+          ]
+        }
+      ],
+      "caption_model_ready": [
+        {
+          "metric": {
+            "__name__": "caption_model_ready",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921079.062,
+            "1"
+          ]
+        }
+      ],
+      "sum by (mode,outcome) (caption_images_total)": [
+        {
+          "metric": {
+            "mode": "single",
+            "outcome": "success"
+          },
+          "value": [
+            1792921079.064,
+            "5"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "single",
+            "outcome": "error"
+          },
+          "value": [
+            1792921079.064,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "outcome": "success"
+          },
+          "value": [
+            1792921079.064,
+            "41"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "outcome": "error"
+          },
+          "value": [
+            1792921079.064,
+            "1"
+          ]
+        }
+      ],
+      "sum by (mode,operation) (caption_errors_total)": [
+        {
+          "metric": {
+            "mode": "single",
+            "operation": "validation"
+          },
+          "value": [
+            1792921079.065,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "single",
+            "operation": "decode"
+          },
+          "value": [
+            1792921079.065,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "single",
+            "operation": "inference"
+          },
+          "value": [
+            1792921079.065,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "single",
+            "operation": "model"
+          },
+          "value": [
+            1792921079.065,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "operation": "validation"
+          },
+          "value": [
+            1792921079.065,
+            "2"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "operation": "decode"
+          },
+          "value": [
+            1792921079.065,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "operation": "inference"
+          },
+          "value": [
+            1792921079.065,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "operation": "model"
+          },
+          "value": [
+            1792921079.065,
+            "0"
+          ]
+        }
+      ],
+      "sum(caption_active_requests)": [
+        {
+          "metric": {},
+          "value": [
+            1792921079.067,
+            "0"
+          ]
+        }
+      ],
+      "caption_active_inferences": [
+        {
+          "metric": {
+            "__name__": "caption_active_inferences",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921079.068,
+            "0"
+          ]
+        }
+      ],
+      "caption_bulk_active": [
+        {
+          "metric": {
+            "__name__": "caption_bulk_active",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921079.069,
+            "0"
+          ]
+        }
+      ],
+      "caption_last_batch_size": [
+        {
+          "metric": {
+            "__name__": "caption_last_batch_size",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921079.074,
+            "10"
+          ]
+        }
+      ],
+      "caption_process_memory_bytes": [
+        {
+          "metric": {
+            "__name__": "caption_process_memory_bytes",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921079.076,
+            "1540669440"
+          ]
+        }
+      ],
+      "100 * (1 - avg(rate(node_cpu_seconds_total{mode=\"idle\"}[30s])))": [
+        {
+          "metric": {},
+          "value": [
+            1792921079.077,
+            "0.5760000000000098"
+          ]
+        }
+      ],
+      "100 * (1 - node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)": [
+        {
+          "metric": {
+            "instance": "127.0.0.1:9100",
+            "job": "node"
+          },
+          "value": [
+            1792921079.078,
+            "4.943915684906575"
+          ]
+        }
+      ],
+      "sum by (mode) (caption_inference_duration_seconds_count)": [
+        {
+          "metric": {
+            "mode": "single"
+          },
+          "value": [
+            1792921079.08,
+            "5"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk"
+          },
+          "value": [
+            1792921079.08,
+            "41"
+          ]
+        }
+      ],
+      "sum by (mode) (caption_inference_duration_seconds_sum)": [
+        {
+          "metric": {
+            "mode": "single"
+          },
+          "value": [
+            1792921079.081,
+            "6.629440782999836"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk"
+          },
+          "value": [
+            1792921079.081,
+            "57.39667033099977"
+          ]
+        }
+      ]
+    }
+  },
+  "worker": {
+    "status": "ok",
+    "device": "cpu",
+    "model_ready": true
+  },
+  "streamlit": "ok",
+  "grafana": {
+    "database": "ok",
+    "version": "12.2.0",
+    "commit": "92f1fba9b4b6700328e99e97328d6639df8ddc3d"
+  },
+  "alertmanager": {
+    "cluster": {
+      "peers": [],
+      "status": "disabled"
+    },
+    "config": {
+      "original": "global:\n  resolve_timeout: 1m\n  http_config:\n    follow_redirects: true\n    enable_http2: true\n  smtp_hello: localhost\n  smtp_require_tls: true\n  smtp_tls_config:\n    insecure_skip_verify: false\n  pagerduty_url: https://events.pagerduty.com/v2/enqueue\n  opsgenie_api_url: https://api.opsgenie.com/\n  wechat_api_url: https://qyapi.weixin.qq.com/cgi-bin/\n  victorops_api_url: https://alert.victorops.com/integrations/generic/20131114/alert/\n  telegram_api_url: https://api.telegram.org\n  webex_api_url: https://webexapis.com/v1/messages\n  rocketchat_api_url: https://open.rocket.chat/\nroute:\n  receiver: local-evaluation\n  group_by:\n  - alertname\n  continue: false\n  group_wait: 5s\n  group_interval: 10s\n  repeat_interval: 1h\nreceivers:\n- name: local-evaluation\ntemplates: []\n"
+    },
+    "uptime": "2026-10-25T09:19:29.103Z",
+    "versionInfo": {
+      "branch": "HEAD",
+      "buildDate": "20250307-15:05:18",
+      "buildUser": "root@fa3ca569dfe4",
+      "goVersion": "go1.23.7",
+      "revision": "b2099eaa2c9ebc25edb26517cb9c732738e93910",
+      "version": "0.28.1"
+    }
+  },
+  "active_alerts": []
+}

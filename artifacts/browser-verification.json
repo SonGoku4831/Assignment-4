@@ -1,0 +1,84 @@
+{
+  "single_page_text": "Skip to main content\nWorkload settings\n\nMode\n\nSingle\n\nBulk\n\nClient category\n\nClient categories are bounded. IP addresses and session IDs are never exported as labels.\n\nCPU only \u00b7 15 MiB/image \u00b7 50 MiB/ZIP \u00b7 100 images/batch\n\nModel weights load on first inference. Monitoring uses port 8000.\n\nDeploy\nCaption Observatory\n\nCPU image captioning \u00b7 Single images and sequential ZIP batches \u00b7 Live Prometheus monitoring\n\nUpload one image\n\nflower.jpg\n143.0KB\nadd icon\nadd\n\nGenerate captions\n\ncheck\n\nFinished: 1 captions, 0 failures\n\nDownload results CSV\n\nInference time measures model.generate; per-image processing includes decode and initial model loading. Failures appear in the results table.",
+  "browser_errors": [],
+  "grafana_url": "http://127.0.0.1:3000/d/caption-observatory/caption-observatory-c2b7-cpu-image-captioning?orgId=1&from=now-15m&to=now&refresh=5s&timezone=browser",
+  "recorded": true,
+  "single_success": true,
+  "bulk_success": true,
+  "bulk_page_text": "Skip to main content\nWorkload settings\n\nMode\n\nSingle\n\nBulk\n\nClient category\n\nClient categories are bounded. IP addresses and session IDs are never exported as labels.\n\nCPU only \u00b7 15 MiB/image \u00b7 50 MiB/ZIP \u00b7 100 images/batch\n\nModel weights load on first inference. Monitoring uses port 8000.\n\nDeploy\nCaption Observatory\n\nCPU image captioning \u00b7 Single images and sequential ZIP batches \u00b7 Live Prometheus monitoring\n\nUpload a ZIP of images\n\nbulk-10.zip\n486.0KB\nadd icon\nadd\n\nGenerate captions\n\ncheck\n\nFinished: 10 captions, 0 failures\n\nDownload results CSV\n\nInference time measures model.generate; per-image processing includes decode and initial model loading. Failures appear in the results table.",
+  "tour_started": 1792920794.9165986,
+  "finished": 1792920860.210508,
+  "grafana_video": "/workspace/Assignment-4/artifacts/video/page@caed2e68175c11d64d36cd35f7762fb9.webm",
+  "live_workload": {
+    "started": 1792920804.9170835,
+    "results": [
+      {
+        "filename": "flower.jpg",
+        "caption": "two orange flowers",
+        "seconds": 1.3288412729998527,
+        "error": ""
+      },
+      {
+        "filename": "flower-01.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.4999219999999696,
+        "error": ""
+      },
+      {
+        "filename": "flower-02.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.3652065900000707,
+        "error": ""
+      },
+      {
+        "filename": "flower-03.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.2706237790000614,
+        "error": ""
+      },
+      {
+        "filename": "flower-04.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.3128654839999854,
+        "error": ""
+      },
+      {
+        "filename": "flower-05.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.4803169660001458,
+        "error": ""
+      },
+      {
+        "filename": "flower-06.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.217298079000102,
+        "error": ""
+      },
+      {
+        "filename": "flower-07.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.4486870270000054,
+        "error": ""
+      },
+      {
+        "filename": "flower-08.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.225328768999816,
+        "error": ""
+      },
+      {
+        "filename": "flower-09.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.4126994759999434,
+        "error": ""
+      },
+      {
+        "filename": "flower-10.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.316930068999909,
+        "error": ""
+      }
+    ],
+    "finished": 1792920819.8125029
+  }
+}

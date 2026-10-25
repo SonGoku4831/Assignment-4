@@ -1,0 +1,54 @@
+[
+  {
+    "name": "corrupt image",
+    "http_status": 200,
+    "passed": true,
+    "body": {
+      "results": [
+        {
+          "filename": "image",
+          "caption": "",
+          "seconds": 0.017855749000091237,
+          "error": "Invalid, corrupt, or excessively large image."
+        }
+      ]
+    }
+  },
+  {
+    "name": "corrupt ZIP",
+    "http_status": 400,
+    "passed": true,
+    "body": {
+      "error": "Invalid or corrupt ZIP."
+    }
+  },
+  {
+    "name": "empty ZIP",
+    "http_status": 400,
+    "passed": true,
+    "body": {
+      "error": "ZIP contains no supported images."
+    }
+  },
+  {
+    "name": "mixed good/corrupt batch",
+    "http_status": 200,
+    "passed": true,
+    "body": {
+      "results": [
+        {
+          "filename": "good.jpg",
+          "caption": "two orange flowers",
+          "seconds": 1.175930200000039,
+          "error": ""
+        },
+        {
+          "filename": "bad.jpg",
+          "caption": "",
+          "seconds": 0.000988007999922047,
+          "error": "Invalid, corrupt, or excessively large image."
+        }
+      ]
+    }
+  }
+]

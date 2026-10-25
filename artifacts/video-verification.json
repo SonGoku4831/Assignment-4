@@ -1,0 +1,83 @@
+{
+  "source": "/workspace/Assignment-4/artifacts/video/page@eb2478143e70ebe32fa4ee08f9ca4ace.webm",
+  "page_created": 1792920939.3619857,
+  "tour_started": 1792920958.7865,
+  "finished": 1792921024.03106,
+  "workload": {
+    "started": 1792920968.786803,
+    "results": [
+      {
+        "filename": "flower.jpg",
+        "caption": "two orange flowers",
+        "seconds": 1.2333768270000292,
+        "error": ""
+      },
+      {
+        "filename": "flower-01.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.3093597600000066,
+        "error": ""
+      },
+      {
+        "filename": "flower-02.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.3118191110002044,
+        "error": ""
+      },
+      {
+        "filename": "flower-03.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.3951068480000686,
+        "error": ""
+      },
+      {
+        "filename": "flower-04.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.2836013020000792,
+        "error": ""
+      },
+      {
+        "filename": "flower-05.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.2554082310000467,
+        "error": ""
+      },
+      {
+        "filename": "flower-06.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.3438961849999487,
+        "error": ""
+      },
+      {
+        "filename": "flower-07.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.6266266739999082,
+        "error": ""
+      },
+      {
+        "filename": "flower-08.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.27590361700004,
+        "error": ""
+      },
+      {
+        "filename": "flower-09.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.2471216650001224,
+        "error": ""
+      },
+      {
+        "filename": "flower-10.jpg",
+        "caption": "two orange flowers with green leaves in the background",
+        "seconds": 1.3338251860000128,
+        "error": ""
+      }
+    ],
+    "finished": 1792920983.415483
+  },
+  "browser_errors": [],
+  "refresh": "5s",
+  "source_duration": 84.68,
+  "trim_offset": 18.935439996719367,
+  "output": "/workspace/Assignment-4/artifacts/dashboard-demo.mp4"
+}

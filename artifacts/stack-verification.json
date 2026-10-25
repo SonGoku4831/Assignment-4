@@ -1,0 +1,925 @@
+{
+  "snapshot": {
+    "timestamp": 1792921078.9335163,
+    "metrics": {
+      "up": [
+        {
+          "metric": {
+            "__name__": "up",
+            "instance": "127.0.0.1:9100",
+            "job": "node"
+          },
+          "value": [
+            1792921078.934,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "up",
+            "instance": "127.0.0.1:9090",
+            "job": "prometheus"
+          },
+          "value": [
+            1792921078.934,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "up",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921078.934,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "up",
+            "instance": "127.0.0.1:9093",
+            "job": "alertmanager"
+          },
+          "value": [
+            1792921078.934,
+            "1"
+          ]
+        }
+      ],
+      "caption_model_ready": [
+        {
+          "metric": {
+            "__name__": "caption_model_ready",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921078.935,
+            "1"
+          ]
+        }
+      ],
+      "sum by (mode,outcome) (caption_images_total)": [
+        {
+          "metric": {
+            "mode": "single",
+            "outcome": "success"
+          },
+          "value": [
+            1792921078.937,
+            "5"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "single",
+            "outcome": "error"
+          },
+          "value": [
+            1792921078.937,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "outcome": "success"
+          },
+          "value": [
+            1792921078.937,
+            "41"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "outcome": "error"
+          },
+          "value": [
+            1792921078.937,
+            "1"
+          ]
+        }
+      ],
+      "sum by (mode,operation) (caption_errors_total)": [
+        {
+          "metric": {
+            "mode": "single",
+            "operation": "validation"
+          },
+          "value": [
+            1792921078.938,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "single",
+            "operation": "decode"
+          },
+          "value": [
+            1792921078.938,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "single",
+            "operation": "inference"
+          },
+          "value": [
+            1792921078.938,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "single",
+            "operation": "model"
+          },
+          "value": [
+            1792921078.938,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "operation": "validation"
+          },
+          "value": [
+            1792921078.938,
+            "2"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "operation": "decode"
+          },
+          "value": [
+            1792921078.938,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "operation": "inference"
+          },
+          "value": [
+            1792921078.938,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "operation": "model"
+          },
+          "value": [
+            1792921078.938,
+            "0"
+          ]
+        }
+      ],
+      "sum(caption_active_requests)": [
+        {
+          "metric": {},
+          "value": [
+            1792921078.939,
+            "0"
+          ]
+        }
+      ],
+      "caption_active_inferences": [
+        {
+          "metric": {
+            "__name__": "caption_active_inferences",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921078.94,
+            "0"
+          ]
+        }
+      ],
+      "caption_bulk_active": [
+        {
+          "metric": {
+            "__name__": "caption_bulk_active",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921078.941,
+            "0"
+          ]
+        }
+      ],
+      "caption_last_batch_size": [
+        {
+          "metric": {
+            "__name__": "caption_last_batch_size",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921078.943,
+            "10"
+          ]
+        }
+      ],
+      "caption_process_memory_bytes": [
+        {
+          "metric": {
+            "__name__": "caption_process_memory_bytes",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921078.944,
+            "1540669440"
+          ]
+        }
+      ],
+      "100 * (1 - avg(rate(node_cpu_seconds_total{mode=\"idle\"}[30s])))": [
+        {
+          "metric": {},
+          "value": [
+            1792921078.946,
+            "0.5760000000000098"
+          ]
+        }
+      ],
+      "100 * (1 - node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)": [
+        {
+          "metric": {
+            "instance": "127.0.0.1:9100",
+            "job": "node"
+          },
+          "value": [
+            1792921078.947,
+            "4.943915684906575"
+          ]
+        }
+      ],
+      "sum by (mode) (caption_inference_duration_seconds_count)": [
+        {
+          "metric": {
+            "mode": "single"
+          },
+          "value": [
+            1792921078.948,
+            "5"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk"
+          },
+          "value": [
+            1792921078.948,
+            "41"
+          ]
+        }
+      ],
+      "sum by (mode) (caption_inference_duration_seconds_sum)": [
+        {
+          "metric": {
+            "mode": "single"
+          },
+          "value": [
+            1792921078.949,
+            "6.629440782999836"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk"
+          },
+          "value": [
+            1792921078.949,
+            "57.39667033099977"
+          ]
+        }
+      ]
+    }
+  },
+  "datasource": {
+    "details": {
+      "application": "Prometheus",
+      "features": {
+        "rulerApiEnabled": false
+      }
+    },
+    "message": "Successfully queried the Prometheus API.",
+    "status": "OK"
+  },
+  "dashboard_imported": true,
+  "panels": 20,
+  "queries": [
+    {
+      "panel": "Application availability",
+      "query": "up{job=\"caption-app\"}",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "__name__": "up",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921078.893,
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Pretrained model ready",
+      "query": "caption_model_ready",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "__name__": "caption_model_ready",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921078.894,
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Images attempted",
+      "query": "sum(caption_images_total)",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {},
+          "value": [
+            1792921078.895,
+            "48"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Image outcomes",
+      "query": "sum by (outcome) (caption_images_total)",
+      "series": 2,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "outcome": "success"
+          },
+          "value": [
+            1792921078.897,
+            "46"
+          ]
+        },
+        {
+          "metric": {
+            "outcome": "error"
+          },
+          "value": [
+            1792921078.897,
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Single versus bulk throughput",
+      "query": "sum by (mode) (rate(caption_images_total[1m]))",
+      "series": 2,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "mode": "single"
+          },
+          "value": [
+            1792921078.898,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk"
+          },
+          "value": [
+            1792921078.898,
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Image success and failure counts",
+      "query": "sum by (mode, outcome) (caption_images_total)",
+      "series": 4,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "mode": "single",
+            "outcome": "success"
+          },
+          "value": [
+            1792921078.9,
+            "5"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "single",
+            "outcome": "error"
+          },
+          "value": [
+            1792921078.9,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "outcome": "success"
+          },
+          "value": [
+            1792921078.9,
+            "41"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "outcome": "error"
+          },
+          "value": [
+            1792921078.9,
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Overall image processing rate",
+      "query": "sum(rate(caption_images_total[1m]))",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {},
+          "value": [
+            1792921078.902,
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Mean inference latency",
+      "query": "sum by (mode) (rate(caption_inference_duration_seconds_sum[2m])) / clamp_min(sum by (mode) (rate(caption_inference_duration_seconds_count[2m])), 0.000001)",
+      "series": 2,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "mode": "single"
+          },
+          "value": [
+            1792921078.903,
+            "1.2288213309998355"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk"
+          },
+          "value": [
+            1792921078.903,
+            "1.3367214863000298"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Inference latency distribution",
+      "query": "histogram_quantile(0.5, sum by (le) (rate(caption_inference_seconds_bucket[5m])))",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {},
+          "value": [
+            1792921078.905,
+            "1.5"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Inference latency distribution",
+      "query": "histogram_quantile(0.95, sum by (le) (rate(caption_inference_seconds_bucket[5m])))",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {},
+          "value": [
+            1792921078.906,
+            "1.95"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Inference latency distribution",
+      "query": "histogram_quantile(0.99, sum by (le) (rate(caption_inference_seconds_bucket[5m])))",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {},
+          "value": [
+            1792921078.911,
+            "1.99"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Active uploads and CPU inferences",
+      "query": "sum by (mode) (caption_active_requests)",
+      "series": 2,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "mode": "single"
+          },
+          "value": [
+            1792921078.913,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk"
+          },
+          "value": [
+            1792921078.913,
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Active uploads and CPU inferences",
+      "query": "caption_active_inferences",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "__name__": "caption_active_inferences",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921078.914,
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Bulk workload and batch size",
+      "query": "caption_bulk_active",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "__name__": "caption_bulk_active",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921078.915,
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Bulk workload and batch size",
+      "query": "caption_last_batch_size",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "__name__": "caption_last_batch_size",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921078.917,
+            "10"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Upload duration",
+      "query": "sum by (mode) (rate(caption_request_duration_seconds_sum[5m])) / clamp_min(sum by (mode) (rate(caption_request_duration_seconds_count[5m])), 0.000001)",
+      "series": 2,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "mode": "single"
+          },
+          "value": [
+            1792921078.918,
+            "0.8601920010000869"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk"
+          },
+          "value": [
+            1792921078.918,
+            "5.623699045600006"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Host CPU utilization",
+      "query": "100 * (1 - avg(rate(node_cpu_seconds_total{mode=\"idle\",job=\"node\"}[1m])))",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {},
+          "value": [
+            1792921078.92,
+            "10.54909090909083"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Host RAM utilization",
+      "query": "100 * (1 - node_memory_MemAvailable_bytes{job=\"node\"}/node_memory_MemTotal_bytes{job=\"node\"})",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "instance": "127.0.0.1:9100",
+            "job": "node"
+          },
+          "value": [
+            1792921078.922,
+            "4.943915684906575"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Caption process RSS",
+      "query": "caption_process_memory_bytes",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "__name__": "caption_process_memory_bytes",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921078.923,
+            "1540669440"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Disk utilization",
+      "query": "100 * (1 - node_filesystem_avail_bytes{job=\"node\",fstype!~\"tmpfs|devtmpfs|squashfs|proc|sysfs\"} / node_filesystem_size_bytes{job=\"node\",fstype!~\"tmpfs|devtmpfs|squashfs|proc|sysfs\"})",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "device": "overlay",
+            "fstype": "overlay",
+            "instance": "127.0.0.1:9100",
+            "job": "node",
+            "mountpoint": "/"
+          },
+          "value": [
+            1792921078.924,
+            "40.22403063504254"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Bulk correlation \u00b7 CPU and activity",
+      "query": "100 * (1 - avg(rate(node_cpu_seconds_total{mode=\"idle\",job=\"node\"}[30s])))",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {},
+          "value": [
+            1792921078.925,
+            "0.5760000000000098"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Bulk correlation \u00b7 CPU and activity",
+      "query": "caption_bulk_active",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "__name__": "caption_bulk_active",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921078.927,
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Bulk correlation \u00b7 memory and activity",
+      "query": "caption_process_memory_bytes",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "__name__": "caption_process_memory_bytes",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921078.928,
+            "1540669440"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Bulk correlation \u00b7 memory and activity",
+      "query": "caption_bulk_active",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "__name__": "caption_bulk_active",
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921078.93,
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Errors by operation",
+      "query": "sum by (mode,operation) (caption_errors_total)",
+      "series": 8,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "mode": "single",
+            "operation": "validation"
+          },
+          "value": [
+            1792921078.931,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "single",
+            "operation": "decode"
+          },
+          "value": [
+            1792921078.931,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "single",
+            "operation": "inference"
+          },
+          "value": [
+            1792921078.931,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "single",
+            "operation": "model"
+          },
+          "value": [
+            1792921078.931,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "operation": "validation"
+          },
+          "value": [
+            1792921078.931,
+            "2"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "operation": "decode"
+          },
+          "value": [
+            1792921078.931,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "operation": "inference"
+          },
+          "value": [
+            1792921078.931,
+            "0"
+          ]
+        },
+        {
+          "metric": {
+            "mode": "bulk",
+            "operation": "model"
+          },
+          "value": [
+            1792921078.931,
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "Batch size distribution",
+      "query": "rate(caption_batch_images_sum[5m]) / clamp_min(rate(caption_batch_images_count[5m]), 0.000001)",
+      "series": 1,
+      "has_finite_data": true,
+      "result": [
+        {
+          "metric": {
+            "instance": "127.0.0.1:8000",
+            "job": "caption-app"
+          },
+          "value": [
+            1792921078.932,
+            "7.333333333333334"
+          ]
+        }
+      ]
+    }
+  ]
+}

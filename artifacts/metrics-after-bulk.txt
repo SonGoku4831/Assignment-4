@@ -1,0 +1,230 @@
+# HELP caption_images_total Attempted images by result.
+# TYPE caption_images_total counter
+caption_images_total{client="interactive",mode="single",outcome="success"} 0.0
+caption_images_total{client="interactive",mode="single",outcome="error"} 0.0
+caption_images_total{client="demonstration",mode="single",outcome="success"} 1.0
+caption_images_total{client="demonstration",mode="single",outcome="error"} 0.0
+caption_images_total{client="test",mode="single",outcome="success"} 0.0
+caption_images_total{client="test",mode="single",outcome="error"} 0.0
+caption_images_total{client="interactive",mode="bulk",outcome="success"} 0.0
+caption_images_total{client="interactive",mode="bulk",outcome="error"} 0.0
+caption_images_total{client="demonstration",mode="bulk",outcome="success"} 10.0
+caption_images_total{client="demonstration",mode="bulk",outcome="error"} 0.0
+caption_images_total{client="test",mode="bulk",outcome="success"} 0.0
+caption_images_total{client="test",mode="bulk",outcome="error"} 0.0
+# HELP caption_images_created Attempted images by result.
+# TYPE caption_images_created gauge
+caption_images_created{client="interactive",mode="single",outcome="success"} 1.7929204602617874e+09
+caption_images_created{client="interactive",mode="single",outcome="error"} 1.792920460261799e+09
+caption_images_created{client="demonstration",mode="single",outcome="success"} 1.7929204602618303e+09
+caption_images_created{client="demonstration",mode="single",outcome="error"} 1.7929204602618396e+09
+caption_images_created{client="test",mode="single",outcome="success"} 1.7929204602618687e+09
+caption_images_created{client="test",mode="single",outcome="error"} 1.792920460261878e+09
+caption_images_created{client="interactive",mode="bulk",outcome="success"} 1.79292046026198e+09
+caption_images_created{client="interactive",mode="bulk",outcome="error"} 1.7929204602619913e+09
+caption_images_created{client="demonstration",mode="bulk",outcome="success"} 1.7929204602620244e+09
+caption_images_created{client="demonstration",mode="bulk",outcome="error"} 1.792920460262034e+09
+caption_images_created{client="test",mode="bulk",outcome="success"} 1.792920460262064e+09
+caption_images_created{client="test",mode="bulk",outcome="error"} 1.792920460262077e+09
+# HELP caption_errors_total Failures by bounded operation.
+# TYPE caption_errors_total counter
+caption_errors_total{client="interactive",mode="single",operation="validation"} 0.0
+caption_errors_total{client="interactive",mode="single",operation="decode"} 0.0
+caption_errors_total{client="interactive",mode="single",operation="inference"} 0.0
+caption_errors_total{client="interactive",mode="single",operation="model"} 0.0
+caption_errors_total{client="demonstration",mode="single",operation="validation"} 0.0
+caption_errors_total{client="demonstration",mode="single",operation="decode"} 0.0
+caption_errors_total{client="demonstration",mode="single",operation="inference"} 0.0
+caption_errors_total{client="demonstration",mode="single",operation="model"} 0.0
+caption_errors_total{client="test",mode="single",operation="validation"} 0.0
+caption_errors_total{client="test",mode="single",operation="decode"} 0.0
+caption_errors_total{client="test",mode="single",operation="inference"} 0.0
+caption_errors_total{client="test",mode="single",operation="model"} 0.0
+caption_errors_total{client="interactive",mode="bulk",operation="validation"} 0.0
+caption_errors_total{client="interactive",mode="bulk",operation="decode"} 0.0
+caption_errors_total{client="interactive",mode="bulk",operation="inference"} 0.0
+caption_errors_total{client="interactive",mode="bulk",operation="model"} 0.0
+caption_errors_total{client="demonstration",mode="bulk",operation="validation"} 0.0
+caption_errors_total{client="demonstration",mode="bulk",operation="decode"} 0.0
+caption_errors_total{client="demonstration",mode="bulk",operation="inference"} 0.0
+caption_errors_total{client="demonstration",mode="bulk",operation="model"} 0.0
+caption_errors_total{client="test",mode="bulk",operation="validation"} 0.0
+caption_errors_total{client="test",mode="bulk",operation="decode"} 0.0
+caption_errors_total{client="test",mode="bulk",operation="inference"} 0.0
+caption_errors_total{client="test",mode="bulk",operation="model"} 0.0
+# HELP caption_errors_created Failures by bounded operation.
+# TYPE caption_errors_created gauge
+caption_errors_created{client="interactive",mode="single",operation="validation"} 1.7929204602618098e+09
+caption_errors_created{client="interactive",mode="single",operation="decode"} 1.7929204602618158e+09
+caption_errors_created{client="interactive",mode="single",operation="inference"} 1.7929204602618215e+09
+caption_errors_created{client="interactive",mode="single",operation="model"} 1.792920460261826e+09
+caption_errors_created{client="demonstration",mode="single",operation="validation"} 1.7929204602618496e+09
+caption_errors_created{client="demonstration",mode="single",operation="decode"} 1.7929204602618556e+09
+caption_errors_created{client="demonstration",mode="single",operation="inference"} 1.7929204602618601e+09
+caption_errors_created{client="demonstration",mode="single",operation="model"} 1.7929204602618644e+09
+caption_errors_created{client="test",mode="single",operation="validation"} 1.7929204602618885e+09
+caption_errors_created{client="test",mode="single",operation="decode"} 1.792920460261894e+09
+caption_errors_created{client="test",mode="single",operation="inference"} 1.7929204602619002e+09
+caption_errors_created{client="test",mode="single",operation="model"} 1.7929204602619054e+09
+caption_errors_created{client="interactive",mode="bulk",operation="validation"} 1.7929204602620027e+09
+caption_errors_created{client="interactive",mode="bulk",operation="decode"} 1.792920460262007e+09
+caption_errors_created{client="interactive",mode="bulk",operation="inference"} 1.7929204602620144e+09
+caption_errors_created{client="interactive",mode="bulk",operation="model"} 1.7929204602620199e+09
+caption_errors_created{client="demonstration",mode="bulk",operation="validation"} 1.792920460262044e+09
+caption_errors_created{client="demonstration",mode="bulk",operation="decode"} 1.7929204602620485e+09
+caption_errors_created{client="demonstration",mode="bulk",operation="inference"} 1.792920460262053e+09
+caption_errors_created{client="demonstration",mode="bulk",operation="model"} 1.792920460262058e+09
+caption_errors_created{client="test",mode="bulk",operation="validation"} 1.7929204602620893e+09
+caption_errors_created{client="test",mode="bulk",operation="decode"} 1.7929204602620955e+09
+caption_errors_created{client="test",mode="bulk",operation="inference"} 1.7929204602621021e+09
+caption_errors_created{client="test",mode="bulk",operation="model"} 1.7929204602621086e+09
+# HELP caption_requests_total Completed upload requests.
+# TYPE caption_requests_total counter
+caption_requests_total{client="interactive",mode="single",outcome="success"} 0.0
+caption_requests_total{client="interactive",mode="single",outcome="error"} 0.0
+caption_requests_total{client="demonstration",mode="single",outcome="success"} 1.0
+caption_requests_total{client="demonstration",mode="single",outcome="error"} 0.0
+caption_requests_total{client="test",mode="single",outcome="success"} 0.0
+caption_requests_total{client="test",mode="single",outcome="error"} 0.0
+caption_requests_total{client="interactive",mode="bulk",outcome="success"} 0.0
+caption_requests_total{client="interactive",mode="bulk",outcome="error"} 0.0
+caption_requests_total{client="demonstration",mode="bulk",outcome="success"} 1.0
+caption_requests_total{client="demonstration",mode="bulk",outcome="error"} 0.0
+caption_requests_total{client="test",mode="bulk",outcome="success"} 0.0
+caption_requests_total{client="test",mode="bulk",outcome="error"} 0.0
+# HELP caption_requests_created Completed upload requests.
+# TYPE caption_requests_created gauge
+caption_requests_created{client="interactive",mode="single",outcome="success"} 1.7929204602617936e+09
+caption_requests_created{client="interactive",mode="single",outcome="error"} 1.7929204602618043e+09
+caption_requests_created{client="demonstration",mode="single",outcome="success"} 1.7929204602618349e+09
+caption_requests_created{client="demonstration",mode="single",outcome="error"} 1.7929204602618442e+09
+caption_requests_created{client="test",mode="single",outcome="success"} 1.7929204602618732e+09
+caption_requests_created{client="test",mode="single",outcome="error"} 1.792920460261883e+09
+caption_requests_created{client="interactive",mode="bulk",outcome="success"} 1.792920460261986e+09
+caption_requests_created{client="interactive",mode="bulk",outcome="error"} 1.792920460261997e+09
+caption_requests_created{client="demonstration",mode="bulk",outcome="success"} 1.7929204602620292e+09
+caption_requests_created{client="demonstration",mode="bulk",outcome="error"} 1.792920460262039e+09
+caption_requests_created{client="test",mode="bulk",outcome="success"} 1.7929204602620704e+09
+caption_requests_created{client="test",mode="bulk",outcome="error"} 1.7929204602620833e+09
+# HELP caption_active_requests Uploads being processed.
+# TYPE caption_active_requests gauge
+caption_active_requests{mode="single"} 0.0
+caption_active_requests{mode="bulk"} 0.0
+# HELP caption_active_inferences CPU inferences in progress.
+# TYPE caption_active_inferences gauge
+caption_active_inferences 0.0
+# HELP caption_bulk_active Bulk requests in progress.
+# TYPE caption_bulk_active gauge
+caption_bulk_active 0.0
+# HELP caption_last_batch_size Number of candidate images in the last bulk request.
+# TYPE caption_last_batch_size gauge
+caption_last_batch_size 10.0
+# HELP caption_process_memory_bytes Caption process RSS.
+# TYPE caption_process_memory_bytes gauge
+caption_process_memory_bytes 1.580429312e+09
+# HELP caption_model_ready Whether pretrained CPU model is loaded.
+# TYPE caption_model_ready gauge
+caption_model_ready 1.0
+# HELP caption_inference_seconds Model generation latency.
+# TYPE caption_inference_seconds histogram
+caption_inference_seconds_bucket{le="0.1",mode="single"} 0.0
+caption_inference_seconds_bucket{le="0.25",mode="single"} 0.0
+caption_inference_seconds_bucket{le="0.5",mode="single"} 0.0
+caption_inference_seconds_bucket{le="1.0",mode="single"} 0.0
+caption_inference_seconds_bucket{le="2.0",mode="single"} 1.0
+caption_inference_seconds_bucket{le="4.0",mode="single"} 1.0
+caption_inference_seconds_bucket{le="8.0",mode="single"} 1.0
+caption_inference_seconds_bucket{le="16.0",mode="single"} 1.0
+caption_inference_seconds_bucket{le="32.0",mode="single"} 1.0
+caption_inference_seconds_bucket{le="64.0",mode="single"} 1.0
+caption_inference_seconds_bucket{le="128.0",mode="single"} 1.0
+caption_inference_seconds_bucket{le="+Inf",mode="single"} 1.0
+caption_inference_seconds_count{mode="single"} 1.0
+caption_inference_seconds_sum{mode="single"} 1.1255962529999124
+caption_inference_seconds_bucket{le="0.1",mode="bulk"} 0.0
+caption_inference_seconds_bucket{le="0.25",mode="bulk"} 0.0
+caption_inference_seconds_bucket{le="0.5",mode="bulk"} 0.0
+caption_inference_seconds_bucket{le="1.0",mode="bulk"} 0.0
+caption_inference_seconds_bucket{le="2.0",mode="bulk"} 10.0
+caption_inference_seconds_bucket{le="4.0",mode="bulk"} 10.0
+caption_inference_seconds_bucket{le="8.0",mode="bulk"} 10.0
+caption_inference_seconds_bucket{le="16.0",mode="bulk"} 10.0
+caption_inference_seconds_bucket{le="32.0",mode="bulk"} 10.0
+caption_inference_seconds_bucket{le="64.0",mode="bulk"} 10.0
+caption_inference_seconds_bucket{le="128.0",mode="bulk"} 10.0
+caption_inference_seconds_bucket{le="+Inf",mode="bulk"} 10.0
+caption_inference_seconds_count{mode="bulk"} 10.0
+caption_inference_seconds_sum{mode="bulk"} 15.031527521999806
+# HELP caption_inference_seconds_created Model generation latency.
+# TYPE caption_inference_seconds_created gauge
+caption_inference_seconds_created{mode="single"} 1.7929204602617283e+09
+caption_inference_seconds_created{mode="bulk"} 1.792920460261923e+09
+# HELP caption_processing_seconds Decode plus generation time per image.
+# TYPE caption_processing_seconds histogram
+caption_processing_seconds_bucket{le="0.1",mode="single"} 0.0
+caption_processing_seconds_bucket{le="0.5",mode="single"} 0.0
+caption_processing_seconds_bucket{le="1.0",mode="single"} 0.0
+caption_processing_seconds_bucket{le="2.0",mode="single"} 0.0
+caption_processing_seconds_bucket{le="4.0",mode="single"} 0.0
+caption_processing_seconds_bucket{le="8.0",mode="single"} 0.0
+caption_processing_seconds_bucket{le="16.0",mode="single"} 0.0
+caption_processing_seconds_bucket{le="32.0",mode="single"} 0.0
+caption_processing_seconds_bucket{le="64.0",mode="single"} 0.0
+caption_processing_seconds_bucket{le="128.0",mode="single"} 1.0
+caption_processing_seconds_bucket{le="+Inf",mode="single"} 1.0
+caption_processing_seconds_count{mode="single"} 1.0
+caption_processing_seconds_sum{mode="single"} 92.7417417900001
+caption_processing_seconds_bucket{le="0.1",mode="bulk"} 0.0
+caption_processing_seconds_bucket{le="0.5",mode="bulk"} 0.0
+caption_processing_seconds_bucket{le="1.0",mode="bulk"} 0.0
+caption_processing_seconds_bucket{le="2.0",mode="bulk"} 10.0
+caption_processing_seconds_bucket{le="4.0",mode="bulk"} 10.0
+caption_processing_seconds_bucket{le="8.0",mode="bulk"} 10.0
+caption_processing_seconds_bucket{le="16.0",mode="bulk"} 10.0
+caption_processing_seconds_bucket{le="32.0",mode="bulk"} 10.0
+caption_processing_seconds_bucket{le="64.0",mode="bulk"} 10.0
+caption_processing_seconds_bucket{le="128.0",mode="bulk"} 10.0
+caption_processing_seconds_bucket{le="+Inf",mode="bulk"} 10.0
+caption_processing_seconds_count{mode="bulk"} 10.0
+caption_processing_seconds_sum{mode="bulk"} 15.048731486999941
+# HELP caption_processing_seconds_created Decode plus generation time per image.
+# TYPE caption_processing_seconds_created gauge
+caption_processing_seconds_created{mode="single"} 1.7929204602617555e+09
+caption_processing_seconds_created{mode="bulk"} 1.7929204602619467e+09
+# HELP caption_inference_duration_seconds Generation duration sum and count.
+# TYPE caption_inference_duration_seconds summary
+caption_inference_duration_seconds_count{mode="single"} 1.0
+caption_inference_duration_seconds_sum{mode="single"} 1.1255962529999124
+caption_inference_duration_seconds_count{mode="bulk"} 10.0
+caption_inference_duration_seconds_sum{mode="bulk"} 15.031527521999806
+# HELP caption_inference_duration_seconds_created Generation duration sum and count.
+# TYPE caption_inference_duration_seconds_created gauge
+caption_inference_duration_seconds_created{mode="single"} 1.792920460261774e+09
+caption_inference_duration_seconds_created{mode="bulk"} 1.7929204602619686e+09
+# HELP caption_request_duration_seconds Whole upload duration sum and count.
+# TYPE caption_request_duration_seconds summary
+caption_request_duration_seconds_count{mode="single"} 1.0
+caption_request_duration_seconds_sum{mode="single"} 92.74204788100019
+caption_request_duration_seconds_count{mode="bulk"} 1.0
+caption_request_duration_seconds_sum{mode="bulk"} 15.052962099999831
+# HELP caption_request_duration_seconds_created Whole upload duration sum and count.
+# TYPE caption_request_duration_seconds_created gauge
+caption_request_duration_seconds_created{mode="single"} 1.79292046026178e+09
+caption_request_duration_seconds_created{mode="bulk"} 1.7929204602619746e+09
+# HELP caption_batch_images Candidate images per bulk upload.
+# TYPE caption_batch_images histogram
+caption_batch_images_bucket{le="1.0"} 0.0
+caption_batch_images_bucket{le="5.0"} 0.0
+caption_batch_images_bucket{le="10.0"} 1.0
+caption_batch_images_bucket{le="20.0"} 1.0
+caption_batch_images_bucket{le="50.0"} 1.0
+caption_batch_images_bucket{le="100.0"} 1.0
+caption_batch_images_bucket{le="+Inf"} 1.0
+caption_batch_images_count 1.0
+caption_batch_images_sum 10.0
+# HELP caption_batch_images_created Candidate images per bulk upload.
+# TYPE caption_batch_images_created gauge
+caption_batch_images_created 1.7929204602616668e+09
+# HELP caption_started_timestamp_seconds Metrics service start time.
+# TYPE caption_started_timestamp_seconds gauge
+caption_started_timestamp_seconds 1.7929204602616985e+09

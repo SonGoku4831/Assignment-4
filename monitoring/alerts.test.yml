@@ -1,0 +1,66 @@
+# Synthetic rule tests validate logic; these are not experimental workload data.
+rule_files:
+  - alerts.yml
+evaluation_interval: 5s
+tests:
+  - interval: 5s
+    input_series:
+      - series: 'up{job="caption-app",instance="127.0.0.1:8000"}'
+        values: '0+0x20'
+    alert_rule_test:
+      - eval_time: 40s
+        alertname: CaptionApplicationDown
+        exp_alerts:
+          - exp_labels:
+              job: caption-app
+              instance: 127.0.0.1:8000
+              severity: critical
+            exp_annotations:
+              summary: Caption metrics endpoint is unavailable
+              description: Prometheus has failed to scrape the application for 30 seconds.
+  - interval: 5s
+    input_series:
+      - series: 'caption_inference_seconds_sum{mode="bulk"}'
+        values: '0+100x60'
+      - series: 'caption_inference_seconds_count{mode="bulk"}'
+        values: '0+5x60'
+      - series: 'caption_images_total{outcome="error",mode="bulk",client="test"}'
+        values: '0+3x60'
+      - series: 'caption_images_total{outcome="success",mode="bulk",client="test"}'
+        values: '0+2x60'
+      - series: 'node_cpu_seconds_total{mode="idle",job="node",cpu="0"}'
+        values: '0+0.1x60'
+      - series: 'node_memory_MemAvailable_bytes{job="node"}'
+        values: '10+0x60'
+      - series: 'node_memory_MemTotal_bytes{job="node"}'
+        values: '100+0x60'
+    alert_rule_test:
+      - eval_time: 3m
+        alertname: CaptionHighInferenceLatency
+        exp_alerts:
+          - exp_labels:
+              severity: warning
+            exp_annotations:
+              summary: Mean CPU inference latency exceeds 10 seconds
+      - eval_time: 3m
+        alertname: CaptionHighErrorRatio
+        exp_alerts:
+          - exp_labels:
+              severity: warning
+            exp_annotations:
+              summary: More than 20 percent of images failed in five minutes
+      - eval_time: 3m
+        alertname: HostHighCPU
+        exp_alerts:
+          - exp_labels:
+              severity: warning
+            exp_annotations:
+              summary: Mean host CPU utilization exceeds 85 percent
+      - eval_time: 3m
+        alertname: HostHighMemory
+        exp_alerts:
+          - exp_labels:
+              job: node
+              severity: warning
+            exp_annotations:
+              summary: Host RAM utilization exceeds 85 percent

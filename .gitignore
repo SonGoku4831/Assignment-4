@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.cache/
+.env
+*.pyc
+artifacts/*.webm
+artifacts/*.mp4
+artifacts/*.png
+samples/generated/
+artifacts/*.log
+artifacts/*.pid
+artifacts/video/

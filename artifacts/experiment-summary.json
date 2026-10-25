@@ -1,0 +1,141 @@
+{
+  "assertions": "PASS",
+  "successes": 11,
+  "failures": 0,
+  "phases": {
+    "idle": {
+      "100 * (1 - avg(rate(node_cpu_seconds_total{mode=\"idle\"}[30s])))": {
+        "min": 1.8159999999999732,
+        "mean": 4.224000000000011,
+        "max": 5.69600000000009,
+        "samples": 15
+      },
+      "100 * (1 - node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)": {
+        "min": 3.7432859711059585,
+        "mean": 4.383224561252327,
+        "max": 4.968324084879805,
+        "samples": 15
+      },
+      "caption_process_memory_bytes": {
+        "min": 23265280.0,
+        "mean": 23283848.533333335,
+        "max": 23289856.0,
+        "samples": 15
+      },
+      "caption_bulk_active": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0,
+        "samples": 15
+      },
+      "caption_active_inferences": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0,
+        "samples": 15
+      }
+    },
+    "single": {
+      "100 * (1 - avg(rate(node_cpu_seconds_total{mode=\"idle\"}[30s])))": {
+        "min": 2.567999999999837,
+        "mean": 5.380347826086976,
+        "max": 12.512000000000079,
+        "samples": 46
+      },
+      "100 * (1 - node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)": {
+        "min": 4.635808337451053,
+        "mean": 4.917755500195526,
+        "max": 6.245112590334001,
+        "samples": 46
+      },
+      "caption_process_memory_bytes": {
+        "min": 23289856.0,
+        "mean": 432597704.34782606,
+        "max": 472612864.0,
+        "samples": 46
+      },
+      "caption_bulk_active": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0,
+        "samples": 46
+      },
+      "caption_active_inferences": {
+        "min": 0.0,
+        "mean": 0.0,
+        "max": 0.0,
+        "samples": 46
+      }
+    },
+    "bulk": {
+      "100 * (1 - avg(rate(node_cpu_seconds_total{mode=\"idle\"}[30s])))": {
+        "min": 4.559999999999853,
+        "mean": 12.536999999999967,
+        "max": 20.664000000000126,
+        "samples": 8
+      },
+      "100 * (1 - node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)": {
+        "min": 4.710683682721051,
+        "mean": 4.928687650862247,
+        "max": 5.077760807764486,
+        "samples": 8
+      },
+      "caption_process_memory_bytes": {
+        "min": 617402368.0,
+        "mean": 1227266560.0,
+        "max": 1612353536.0,
+        "samples": 8
+      },
+      "caption_bulk_active": {
+        "min": 0.0,
+        "mean": 0.625,
+        "max": 1.0,
+        "samples": 8
+      },
+      "caption_active_inferences": {
+        "min": 1.0,
+        "mean": 1.0,
+        "max": 1.0,
+        "samples": 8
+      }
+    },
+    "recovery": {
+      "100 * (1 - avg(rate(node_cpu_seconds_total{mode=\"idle\"}[30s])))": {
+        "min": 27.352000000000043,
+        "mean": 28.55771428571448,
+        "max": 29.360000000000397,
+        "samples": 7
+      },
+      "100 * (1 - node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)": {
+        "min": 4.920022955355319,
+        "mean": 4.975725183221794,
+        "max": 5.070942498851771,
+        "samples": 7
+      },
+      "caption_process_memory_bytes": {
+        "min": 1525067776.0,
+        "mean": 1540884187.4285715,
+        "max": 1580425216.0,
+        "samples": 7
+      },
+      "caption_bulk_active": {
+        "min": 0.0,
+        "mean": 0.2857142857142857,
+        "max": 1.0,
+        "samples": 7
+      },
+      "caption_active_inferences": {
+        "min": 0.0,
+        "mean": 0.2857142857142857,
+        "max": 1.0,
+        "samples": 7
+      }
+    }
+  },
+  "inference_seconds_mean": {
+    "single": 1.1255962529999124,
+    "bulk": 1.5031527521999806
+  },
+  "cold_start_single_wall_seconds": 92.74481725692749,
+  "bulk_wall_seconds": 15.056020975112915
+}

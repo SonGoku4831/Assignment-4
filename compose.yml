@@ -1,0 +1,44 @@
+# Linux host networking allows containerized monitoring to scrape the Python
+# application running in a host virtualenv. This is the tested Ubuntu/Linux path.
+name: assignment4
+services:
+  prometheus:
+    image: prom/prometheus@sha256:63805ebb8d2b3920190daf1cb14a60871b16fd38bed42b857a3182bc621f4996
+    network_mode: host
+    command: ['--config.file=/etc/prometheus/prometheus.yml', '--web.listen-address=127.0.0.1:9090']
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./monitoring/alerts.yml:/etc/prometheus/alerts.yml:ro
+      - prometheus-data:/prometheus
+  # AI regex prompt: include overlay cloud filesystems while excluding pseudo filesystems.
+  # Full attribution and rationale: EVALUATION.md.
+  node-exporter:
+    image: prom/node-exporter@sha256:d00a542e409ee618a4edc67da14dd48c5da66726bbd5537ab2af9c1dfc442c8a
+    network_mode: host
+    pid: host
+    command: ['--path.rootfs=/host', '--web.listen-address=127.0.0.1:9100', '--collector.filesystem.fs-types-exclude=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|sysfs|tracefs)$$']
+    volumes:
+      - /:/host:ro,rslave
+  grafana:
+    image: grafana/grafana@sha256:74144189b38447facf737dfd0f3906e42e0776212bf575dc3334c3609183adf7
+    network_mode: host
+    environment:
+      GF_SERVER_HTTP_ADDR: 127.0.0.1
+      GF_ANALYTICS_REPORTING_ENABLED: 'false'
+      GF_ANALYTICS_CHECK_FOR_UPDATES: 'false'
+      GF_USERS_DEFAULT_THEME: light
+    volumes:
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./monitoring/grafana/dashboards:/var/lib/grafana/dashboards:ro
+      - grafana-data:/var/lib/grafana
+  alertmanager:
+    image: prom/alertmanager:v0.28.1
+    network_mode: host
+    command: ['--config.file=/etc/alertmanager/alertmanager.yml', '--web.listen-address=127.0.0.1:9093', '--cluster.listen-address=']
+    volumes:
+      - ./monitoring/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
+      - alertmanager-data:/alertmanager
+volumes:
+  prometheus-data:
+  grafana-data:
+  alertmanager-data:

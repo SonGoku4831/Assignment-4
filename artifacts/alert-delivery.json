@@ -1,0 +1,36 @@
+{
+  "stopped_pid": 4011,
+  "started": 1792920424.0651455,
+  "received_alerts": [
+    {
+      "annotations": {
+        "description": "Prometheus has failed to scrape the application for 30 seconds.",
+        "summary": "Caption metrics endpoint is unavailable"
+      },
+      "endsAt": "2026-10-25T09:31:39.397Z",
+      "fingerprint": "97b4c76aa8ccbf09",
+      "receivers": [
+        {
+          "name": "local-evaluation"
+        }
+      ],
+      "startsAt": "2026-10-25T09:27:39.397Z",
+      "status": {
+        "inhibitedBy": [],
+        "mutedBy": [],
+        "silencedBy": [],
+        "state": "active"
+      },
+      "updatedAt": "2026-10-25T09:27:39.399Z",
+      "generatorURL": "http://4843ea1753fe:9090/graph?g0.expr=up%7Bjob%3D%22caption-app%22%7D+%3D%3D+0&g0.tab=1",
+      "labels": {
+        "alertname": "CaptionApplicationDown",
+        "instance": "127.0.0.1:8000",
+        "job": "caption-app",
+        "severity": "critical"
+      }
+    }
+  ],
+  "restarted_pid": 4466,
+  "finished": 1792920461.0981216
+}
